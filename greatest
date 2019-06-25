@@ -1,0 +1,31 @@
+package main 
+
+import "fmt"
+
+
+
+func greatest(args ...int)  int {
+	
+
+
+	y := args[0]
+ for _, x:= range args {
+ 	if x > y {
+ 		y = x
+ 		
+ 	}
+ // Left blank becuase it will keep runnning until it finds the greatest number. Return here would just return the intitial value
+ }
+return y
+}
+
+
+func main() {
+			x := []int{
+  48,96,86,68,
+  57,82,63,70,
+  37,34,83,27,
+  19,97, 9,17, 1, }			
+				//0-15
+				fmt.Println(greatest(x...))
+}
